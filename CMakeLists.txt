@@ -25,6 +25,7 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 # Sets compiler flags and language standard
 include(CompilerFlags)
+add_compile_options(-D_GLFW_USE_HYBRID_HPG)
 
 # Registers build options that are exposed to cmake
 include(CMakeOptions.txt)
